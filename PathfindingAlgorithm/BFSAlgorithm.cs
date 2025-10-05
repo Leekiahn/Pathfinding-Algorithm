@@ -19,12 +19,10 @@ public class BFSAlgorithm
         while (queue.Count > 0)
         {
             int node = queue.Dequeue();
-            if (visited[node]) continue;    // 이미 방문한 노드면 무시
-            
-            visited[node] = true;   // 방문 처리
+            if (visited[node]) continue;
+            visited[node] = true;
             Console.WriteLine($"Visited Node: {node}");
 
-            // 인접 노드 큐에 추가
             if (graph.AdjacencyList.ContainsKey(node))
             {
                 foreach (var neighbor in graph.AdjacencyList[node])

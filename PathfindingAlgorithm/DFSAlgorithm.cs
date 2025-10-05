@@ -10,17 +10,21 @@ public class DFSAlgorithm
     }
 
     // 스택 기반 DFS 구현
-    public void StackBasedDFS(int start)
+    public void DFS(int start)
     {
-        // 노드 개수만큼 bool 배열 생성
-        var visited = new bool[graph.AdjacencyList.Count];
-        var stack = new Stack<int>();
+        var visited = new bool[graph.AdjacencyList.Count]; // 방문 여부 배열
+        var stack = new Stack<int>();   // 탐색할 노드 스택
         stack.Push(start);
         
         while(stack.Count > 0)
         {
             int node = stack.Pop();
-            if (visited[node]) continue;    // 이미 방문한 노드면 무시
+            // 이미 방문한 노드면 다음 반복문으로
+            if (visited[node])
+            {
+                Console.WriteLine($"Already Visited Node: {node}");
+                continue;
+            };
             
             visited[node] = true;   // 방문 처리
             Console.WriteLine($"Visited Node: {node}");
@@ -32,28 +36,6 @@ public class DFSAlgorithm
                 {
                     stack.Push(neighbor);
                 }
-            }
-        }
-    }
-    
-    // 재귀 기반 DFS 구현
-    public void RecursiveBasedDFS(int start)
-    {
-        var visited = new bool[graph.AdjacencyList.Count];
-        DFSUtil(start, visited);
-    }
-
-    private void DFSUtil(int node, bool[] visited)
-    {
-        if (visited[node]) return;
-        visited[node] = true;
-        Console.WriteLine($"Visited Node: {node}");
-
-        if (graph.AdjacencyList.ContainsKey(node))
-        {
-            foreach (var neighbor in graph.AdjacencyList[node])
-            {
-                DFSUtil(neighbor, visited);
             }
         }
     }
