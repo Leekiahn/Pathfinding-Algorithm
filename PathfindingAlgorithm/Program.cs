@@ -11,6 +11,6 @@ class Program
         graph.AddEdge(1, 3);
 
         DFSAlgorithm dfs = new DFSAlgorithm(graph);
-        dfs.DFS(0);
+        dfs.StackBasedDFS(0);
     }
 }
