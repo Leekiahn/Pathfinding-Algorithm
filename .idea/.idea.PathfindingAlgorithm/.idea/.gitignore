@@ -11,3 +11,27 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+# Rider 관련
+.idea/
+*.sln.iml
+
+# 빌드 산출물
+bin/
+obj/
+out/
+
+# 사용자 환경 설정
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# 패키지
+*.nupkg
+*.snupkg
+packages/
+
+# 기타
+*.log
+*.vs/
