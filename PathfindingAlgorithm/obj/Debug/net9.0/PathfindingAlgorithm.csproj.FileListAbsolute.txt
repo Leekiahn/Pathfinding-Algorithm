@@ -1,0 +1,15 @@
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\bin\Debug\net9.0\PathfindingAlgorithm.exe
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\bin\Debug\net9.0\PathfindingAlgorithm.deps.json
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\bin\Debug\net9.0\PathfindingAlgorithm.runtimeconfig.json
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\bin\Debug\net9.0\PathfindingAlgorithm.dll
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\bin\Debug\net9.0\PathfindingAlgorithm.pdb
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\obj\Debug\net9.0\PathfindingAlgorithm.GeneratedMSBuildEditorConfig.editorconfig
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\obj\Debug\net9.0\PathfindingAlgorithm.AssemblyInfoInputs.cache
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\obj\Debug\net9.0\PathfindingAlgorithm.AssemblyInfo.cs
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\obj\Debug\net9.0\PathfindingAlgorithm.csproj.CoreCompileInputs.cache
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\obj\Debug\net9.0\PathfindingAlgorithm.sourcelink.json
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\obj\Debug\net9.0\PathfindingAlgorithm.dll
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\obj\Debug\net9.0\refint\PathfindingAlgorithm.dll
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\obj\Debug\net9.0\PathfindingAlgorithm.pdb
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\obj\Debug\net9.0\PathfindingAlgorithm.genruntimeconfig.cache
+D:\Phikozz\Projects\PathfindingAlgorithm\PathfindingAlgorithm\obj\Debug\net9.0\ref\PathfindingAlgorithm.dll
