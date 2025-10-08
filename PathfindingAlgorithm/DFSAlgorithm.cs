@@ -14,11 +14,11 @@ public class DFSAlgorithm
     {
         var visited = new bool[graph.AdjacencyList.Count]; // 방문 여부 배열
         var stack = new Stack<int>();   // 탐색할 노드 스택
-        stack.Push(start);
+        stack.Push(start);  // 0
         
         while(stack.Count > 0)
         {
-            int node = stack.Pop();
+            int node = stack.Pop(); // node = 0
             // 이미 방문한 노드면 다음 반복문으로
             if (visited[node])
             {
