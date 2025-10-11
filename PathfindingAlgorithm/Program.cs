@@ -1,4 +1,6 @@
-﻿namespace PathfindingAlgorithm;
+﻿using System.Reflection;
+
+namespace PathfindingAlgorithm;
 
 class Program
 {
@@ -41,6 +43,13 @@ class Program
             Console.WriteLine($"{i} 까지의 최단 거리: {shortest}");
             i++;
         }
+        
+        Func<int, int, double> heuristic = (node, goal) => 0;
+        
+        AstarAlgorithm astar = new AstarAlgorithm(weightedGraph, heuristic);
+        var result = astar.FindPath(0, 5);
+        Console.WriteLine("A* 알고리즘 최단 경로: " + string.Join(" -> ", result.path));
+        Console.WriteLine("최단 거리: " + string.Join(" -> ", result.cost));
         
     }
 }
