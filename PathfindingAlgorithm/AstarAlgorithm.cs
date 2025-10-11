@@ -14,12 +14,12 @@ public class AstarAlgorithm
         this.heuristic = heuristic;
     }
 
-    public List<int> FindPath(int start, int goal)
+    public (List<int> path, double cost) FindPath(int start, int goal)
     {
         PriorityQueue<int, double> openSet = new PriorityQueue<int, double>(); // 탐색할 노드 우선순위 큐
         Dictionary<int, int> cameFrom = new Dictionary<int, int>(); // 최적 경로 추적용
         double[] gScore = new double[graph.size]; // 시작 노드부터 현재 노드까지의 비용
-        double[] hScore = new double[graph.size]; // 시작 노드부터 목표 노드까지의 예상 비용
+        double[] hScore = new double[graph.size]; // 현재 노드부터 목표 노드까지의 예상 비용
 
         for (int i = 0; i < graph.size; i++)
         {
@@ -38,7 +38,7 @@ public class AstarAlgorithm
             
             if (currentNode == goal)
             {
-                return ReconstructPath(cameFrom, currentNode); // 경로 재구성
+                return (ReconstructPath(cameFrom, currentNode), gScore[goal]); // 경로 재구성
             }
 
             foreach (var item in graph.GetNeighbors(currentNode))
@@ -58,7 +58,7 @@ public class AstarAlgorithm
                 }
             }
         }
-        return new List<int>(); // 경로 없음
+        return (new List<int>(), double.PositiveInfinity); // 경로 없음
     }
 
     private List<int> ReconstructPath(Dictionary<int, int> cameFrom, int currentNode)

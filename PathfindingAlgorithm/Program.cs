@@ -47,8 +47,9 @@ class Program
         Func<int, int, double> heuristic = (node, goal) => 0;
         
         AstarAlgorithm astar = new AstarAlgorithm(weightedGraph, heuristic);
-        var path = astar.FindPath(0, 5);
-        Console.WriteLine("A* 알고리즘 최단 경로: " + string.Join(" -> ", path));
+        var result = astar.FindPath(0, 5);
+        Console.WriteLine("A* 알고리즘 최단 경로: " + string.Join(" -> ", result.path));
+        Console.WriteLine("최단 거리: " + string.Join(" -> ", result.cost));
         
     }
 }
